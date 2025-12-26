@@ -10,6 +10,7 @@ dependencies = [
     { name = "black" },
     { name = "isort" },
     { name = "langchain" },
+    { name = "langchain-ollama" },
     { name = "langchain-openai" },
     { name = "python-dotenv" },
 ]
@@ -19,6 +20,7 @@ requires-dist = [
     { name = "black", specifier = ">=25.12.0" },
     { name = "isort", specifier = ">=7.0.0" },
     { name = "langchain", specifier = ">=1.1.3" },
+    { name = "langchain-ollama", specifier = ">=1.0.1" },
     { name = "langchain-openai", specifier = ">=1.1.3" },
     { name = "python-dotenv", specifier = ">=1.2.1" },
 ]
@@ -312,6 +314,19 @@ wheels = [
 ]
 
 [[package]]
+name = "langchain-ollama"
+version = "1.0.1"
+source = { registry = "https://pkgs.dev.azure.com/toloka/_packaging/Python/pypi/simple/" }
+dependencies = [
+    { name = "langchain-core" },
+    { name = "ollama" },
+]
+sdist = { url = "https://pkgs.dev.azure.com/toloka/_packaging/47f4e901-5306-4783-8339-c0f58febdda1/pypi/download/langchain-ollama/1.0.1/langchain_ollama-1.0.1.tar.gz", hash = "sha256:e37880c2f41cdb0895e863b1cfd0c2c840a117868b3f32e44fef42569e367443" }
+wheels = [
+    { url = "https://pkgs.dev.azure.com/toloka/_packaging/47f4e901-5306-4783-8339-c0f58febdda1/pypi/download/langchain-ollama/1.0.1/langchain_ollama-1.0.1-py3-none-any.whl", hash = "sha256:37eb939a4718a0255fe31e19fbb0def044746c717b01b97d397606ebc3e9b440" },
+]
+
+[[package]]
 name = "langchain-openai"
 version = "1.1.3"
 source = { registry = "https://pkgs.dev.azure.com/toloka/_packaging/Python/pypi/simple/" }
@@ -407,6 +422,19 @@ source = { registry = "https://pkgs.dev.azure.com/toloka/_packaging/Python/pypi/
 sdist = { url = "https://pkgs.dev.azure.com/toloka/_packaging/47f4e901-5306-4783-8339-c0f58febdda1/pypi/download/mypy-extensions/1.1/mypy_extensions-1.1.0.tar.gz", hash = "sha256:52e68efc3284861e772bbcd66823fde5ae21fd2fdb51c62a211403730b916558" }
 wheels = [
     { url = "https://pkgs.dev.azure.com/toloka/_packaging/47f4e901-5306-4783-8339-c0f58febdda1/pypi/download/mypy-extensions/1.1/mypy_extensions-1.1.0-py3-none-any.whl", hash = "sha256:1be4cccdb0f2482337c4743e60421de3a356cd97508abadd57d47403e94f5505" },
+]
+
+[[package]]
+name = "ollama"
+version = "0.6.1"
+source = { registry = "https://pkgs.dev.azure.com/toloka/_packaging/Python/pypi/simple/" }
+dependencies = [
+    { name = "httpx" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://pkgs.dev.azure.com/toloka/_packaging/47f4e901-5306-4783-8339-c0f58febdda1/pypi/download/ollama/0.6.1/ollama-0.6.1.tar.gz", hash = "sha256:478c67546836430034b415ed64fa890fd3d1ff91781a9d548b3325274e69d7c6" }
+wheels = [
+    { url = "https://pkgs.dev.azure.com/toloka/_packaging/47f4e901-5306-4783-8339-c0f58febdda1/pypi/download/ollama/0.6.1/ollama-0.6.1-py3-none-any.whl", hash = "sha256:fc4c984b345735c5486faeee67d8a265214a31cbb828167782dc642ce0a2bf8c" },
 ]
 
 [[package]]
