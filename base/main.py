@@ -33,9 +33,9 @@ def main():
         template=summary_template
     )
     # User openAi
-    # llm = ChatOpenAI(temperature=0., model="gpt-5")
+    llm = ChatOpenAI(temperature=0., model="gpt-5")
     # Use Gemma with Ollama
-    llm = ChatOllama(temperature=0., model="gemma3:1b")
+    # llm = ChatOllama(temperature=0., model="gemma3:1b")
     chain = summary_prompt_template | llm
 
     response = chain.invoke(
