@@ -1,0 +1,30 @@
+[project]
+name = "doc-helper-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "black>=25.12.0",
+    "certifi>=2026.1.4",
+    "fastapi>=0.128.0",
+    "isort>=7.0.0",
+    "jinja2>=3.1.6",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.1",
+    "langchain-pinecone>=0.2.13",
+    "langchain-tavily>=0.2.16",
+    "langchainhub>=0.1.21",
+    "langsmith>=0.6.0",
+    "nltk>=3.9.2",
+    "openai>=2.14.0",
+    "pillow>=12.1.0",
+    "python-dotenv>=1.2.1",
+    "streamlit>=1.52.2",
+    "streamlit-chat>=0.1.1",
+    "tiktoken>=0.12.0",
+    "tqdm>=4.67.1",
+    "unstructured>=0.18.26",
+    "uvicorn>=0.40.0",
+]

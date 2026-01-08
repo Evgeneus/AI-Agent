@@ -3,7 +3,6 @@ from langchain.tools import tool
 from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
 from langchain_openai import ChatOpenAI
 
-
 load_dotenv()
 
 

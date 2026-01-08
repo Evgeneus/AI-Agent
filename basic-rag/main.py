@@ -1,11 +1,11 @@
 import os
+
 from dotenv import load_dotenv
-from pydantic import BaseModel, Field
-from langchain_core.runnables import RunnablePassthrough
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_pinecone import PineconeVectorStore
-
+from pydantic import BaseModel, Field
 
 load_dotenv()
 

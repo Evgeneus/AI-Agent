@@ -1,14 +1,15 @@
 from dotenv import load_dotenv
+
 load_dotenv()
 
-from pydantic import BaseModel, Field
-from langchain.agents import create_agent
-from langchain.tools import tool
-from langchain.messages import HumanMessage
-from langchain_openai import ChatOpenAI
 import tavily
-from tavily import TavilyClient
+from langchain.agents import create_agent
+from langchain.messages import HumanMessage
+from langchain.tools import tool
+from langchain_openai import ChatOpenAI
 from langchain_tavily import TavilySearch
+from pydantic import BaseModel, Field
+from tavily import TavilyClient
 
 
 class Source(BaseModel):
