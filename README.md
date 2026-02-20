@@ -6,3 +6,4 @@
 3. `react-old-step-by-step-agent/main.py` - example of low-level ReAct agent [not useful for prod]
 4. `react-agent-langraph` - example of a React agent via Langraph
 5. `reflection-agent` - example of a reflection loop that iterates on twitter drafts via LangGraph
+6. `agentic-rag` - advanced agentic rag with router, web search
